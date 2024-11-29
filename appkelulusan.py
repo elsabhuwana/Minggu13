@@ -39,7 +39,7 @@ elif selection == "Dataset":
     untuk memprediksi kelulusan siswa, seperti usia, waktu belajar, jumlah kegagalan sebelumnya, absensi, dan nilai-nilai G1 dan G2.
     Silakan pilih kolom yang ingin ditampilkan di bawah ini.
     """)
-    selected_columns = st.multiselect("Pilih kolom yang ingin ditampilkan:", data.columns, default=data.columns)
+    selected_columns = st.multiselect("Pilih kolom yang ingin ditampilkan:", data.columns.tolist(), default=data.columns.tolist())
     st.dataframe(data[selected_columns])
 
 # 3. Grafik

@@ -15,7 +15,7 @@ st.set_page_config(
 # Load Dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r'D:\KULIAH\SEMESTER5\Data Sience\Tugas1\venv\Minggu13\student_data.csv') 
+    data = pd.read_csv('student_data.csv') 
     return data
 
 data = load_data()
